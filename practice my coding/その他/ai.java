@@ -1,5 +1,7 @@
 // 11-7
-
+import java.util.Scanner; // Scannerクラスをインポート
+import java.util.List; // Listインターフェイスをインポート
+import java.util.ArrayList; // ArrayListクラスをインポート
 // Student クラスの定義
 class Student {
     // フィールド
@@ -38,18 +40,41 @@ class Student {
 // メインメソッド
 
     public static void main(String[] args) {
-        // 3 人分の学生情報を元に Student クラスのオブジェクトを作成
-        Student student1 = new Student("A さん", 001, 89, 65, 88);
-        Student student2 = new Student("B さん", 002, 80, 95, 64);
-        Student student3 = new Student("C さん", 003, 70, 80, 98);
 
-        // Student クラスのオブジェクトを配列に格納
-        Student[] students = {student1, student2, student3};
+        
+        // Studentクラスの定義は省略
+
+                Scanner sc = new Scanner(System.in); // Scannerクラスのインスタンスを作成
+                List<Student> list = new ArrayList<>(); // Studentクラスのオブジェクトを格納するリストを作成
+                
+                while (true) { // 無限ループ
+                    System.out.print("名前を入力：");
+                    String name = sc.next(); // 名前を入力
+                    if (name.equals("end")) { // 名前が"end"ならループを抜ける
+                        break;
+                    }
+                    System.out.print("学生番号を入力：");
+                    int id = sc.nextInt(); // 学生番号を入力
+                    System.out.print("国語の点数を入力：");
+                    int japanese = sc.nextInt(); // 国語の点数を入力
+                    System.out.print("数学の点数を入力：");
+                    int math = sc.nextInt(); // 数学の点数を入力
+                    System.out.print("英語の点数を入力：");
+                    int english = sc.nextInt(); // 英語の点数を入力
+                    
+                    Student student = new Student(name, id, japanese, math, english); // Studentクラスのオブジェクトを作成
+                    list.add(student); // リストに追加
+                }
+                
+                // リストに格納された学生情報を表示する処理は省略
+            }
+        }
+        
 
         // 配列の要素を for 文で回す
-        for (Student student : students) {
-        // 学生番号、名前、平均点を画面に表示
-        System.out.println(student.number + " 番 " + student.name + " 平均点 " + student.getAverage());
-        }
-    }
-}
+        // for (Student student : students) {
+        // // 学生番号、名前、平均点を画面に表示
+        // System.out.println(student.number + " 番 " + student.name + " 平均点 " + student.getAverage());
+        // }
+//     }
+// }
