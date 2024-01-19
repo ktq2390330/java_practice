@@ -44,11 +44,9 @@ class BookInfo{
         stdIn.nextLine();
 
         BookInfo book=new BookInfo(book_name,writer_name,year);
-        stdIn.close();
         return book;
     }
 }
-
 class Main11_10{
     public static void main(String[] args) {
         ArrayList<BookInfo> BookList=new ArrayList<>();
@@ -74,7 +72,6 @@ class Main11_10{
             
                 default:
                     System.out.println("終了します");
-                    stdIn.close();
                     break;
             }
         }

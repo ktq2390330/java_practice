@@ -26,6 +26,5 @@ public class Main11_1{
 
         System.out.println("円周の長さは"+c+"です");
         System.out.println("円の面積は"+s+"です");
-        stdIn.close();
     }
 }
