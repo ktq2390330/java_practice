@@ -49,7 +49,7 @@ class BookInfo{
     }
 }
 
-public class Main11_10{
+class Main11_10{
     public static void main(String[] args) {
         ArrayList<BookInfo> BookList=new ArrayList<>();
         Scanner stdIn=new Scanner(System.in,Charset.forName("Shift-JIS"));
