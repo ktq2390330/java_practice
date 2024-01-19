@@ -10,6 +10,27 @@ class BookInfo{
         writer_name=wn;
         year=y;
     }
+
+    public static String getBook_name() {
+        return book_name;
+    }
+
+    public static String getWriter_name() {
+        return writer_name;
+    }
+
+    public static int getYear() {
+        return year;
+    }
+
+    public static int getNo() {
+        return No;
+    }
+
+    public static void print_all(){
+        for 
+    }
+
     public static void main(String[] args) {
         
     }

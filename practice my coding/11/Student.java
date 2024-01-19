@@ -50,8 +50,8 @@ class Student{
         list.add("B");
         list.add("C");
         System.out.println(" 名前  学生番号  国語  数学  英語");
-        System.out.println("Aさん   "+A.get_No()+"      "+A.get_japanese()+"    "+A.get_mt()+"    "+A.get_en());
-        System.out.println("Bさん   "+B.get_No()+"      "+B.get_japanese()+"    "+B.get_mt()+"    "+B.get_en());
-        System.out.println("Cさん   "+C.get_No()+"      "+C.get_japanese()+"    "+C.get_mt()+"    "+C.get_en());
+        System.out.println(A.get_name()+"さん   "+A.get_No()+"      "+A.get_japanese()+"    "+A.get_mt()+"    "+A.get_en());
+        System.out.println(B.get_name()+"さん   "+B.get_No()+"      "+B.get_japanese()+"    "+B.get_mt()+"    "+B.get_en());
+        System.out.println(C.get_name()+"さん   "+C.get_No()+"      "+C.get_japanese()+"    "+C.get_mt()+"    "+C.get_en());
         }
 }
