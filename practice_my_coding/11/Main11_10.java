@@ -41,7 +41,6 @@ class BookInfo{
         String writer_name=stdIn.nextLine();
         System.out.print("出版年:");
         int year=stdIn.nextInt();
-        stdIn.nextLine();
 
         BookInfo book=new BookInfo(book_name,writer_name,year);
         return book;
