@@ -1,0 +1,70 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "kouka1_5",
+            "request": "launch",
+            "mainClass": "kouka1_5",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "Kouka6",
+            "request": "launch",
+            "mainClass": "Kouka6",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "Main11_1",
+            "request": "launch",
+            "mainClass": "Main11_1",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "Main11_10",
+            "request": "launch",
+            "mainClass": "Main11_10",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "X_to_Y_Sum",
+            "request": "launch",
+            "mainClass": "X_to_Y_Sum",
+            "projectName": "practice my coding_b4383558"
+        },
+        {
+            "type": "java",
+            "name": "part_of_print",
+            "request": "launch",
+            "mainClass": "part_of_print",
+            "projectName": "practice my coding_b4383558"
+        }
+    ]
+}
