@@ -114,17 +114,22 @@ public class Main12_2 {
                             String subject=stdIn.nextLine();
                             Teacher tc=new Teacher(name, job, subject);
                             teacherList.add(tc);
+                            System.out.println("追加されました");
+                            System.out.println("--------------------\n\n");
                             break;
                         case "シェフ":
                             System.out.print("得意料理:");
                             String specialities=stdIn.nextLine();
                             Cook ck=new Cook(name, job, specialities);
                             cookList.add(ck);
+                            System.out.println("追加されました");
+                            System.out.println("--------------------\n\n");
                             break;
 
                         default:
                             System.out.println("error:データのない職業です");
                             System.out.println("メニューに戻ります");
+                            System.out.println("--------------------\n\n");
                             break;
                     }
                     break;
