@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 import java.nio.charset.*;
 
 abstract class Person{
@@ -14,9 +13,15 @@ abstract class Person{
     String getName(){return name;}
     String getJob(){return job;}
 
-    abstract Person adds();
 
     abstract void introduce();
+
+    void print_all(List<Person> list){
+        for (Person id:list){
+            System.out.println("氏名:"+id.name);
+            System.out.println("職業:"+id.job);
+        }
+    }
 }
 
 class Teacher extends Person{
@@ -41,6 +46,14 @@ class Teacher extends Person{
         System.out.println("職業:"+this.job);
         System.out.println("担当科目:"+this.subject);
     }
+
+    public void print_teachers(List<Teacher> list) {
+        for (Teacher id:list){
+            System.out.println("氏名:"+id.name);
+            System.out.println("職業:"+id.job);
+            System.out.println("担当科目:"+id.subject);
+        }
+    }
 }
 
 class Cook extends Person{
@@ -63,15 +76,23 @@ class Cook extends Person{
         System.out.println("職業:"+this.job);
         System.out.println("得意料理:"+this.specialities);
     }
+
+    public void print_Cook(List<Cook> list) {
+        for (Cook id:list){
+            System.out.println("氏名:"+id.name);
+            System.out.println("職業:"+id.job);
+            System.out.println("得意料理:"+id.specialities);
+        }
+    }
 }
 
 public class Main12_2 {
     public static void main(String[] args) {
-        Scanner stdIn=new Scanner(System.in,Charset.forName("Shift-JIS"));Scanner stdIn=new Scanner(System.in,Charset.forName("Shift-JIS"));
+        Scanner stdIn=new Scanner(System.in,Charset.forName("Shift-JIS"));
 
-        ArrayList<BookInfo> teacherList=new ArrayList<>();
-        Teacher tc=new Teacher(null, null, null);
-        ArrayList<BookInfo> cookList=new ArrayList<>();
+        ArrayList<Teacher> teacherList=new ArrayList<>();
+        ArrayList<Cook> cookList=new ArrayList<>();
+        boolean flg=false;
         while (true) {
 
             System.out.println("1:職員の追加");
@@ -90,27 +111,37 @@ public class Main12_2 {
                     switch (job) {
                         case "教員":
                             System.out.print("担当科目:");
-                            stdIn.nextLine();
+                            String subject=stdIn.nextLine();
+                            Teacher tc=new Teacher(name, job, subject);
+                            teacherList.add(tc);
                             break;
                         case "シェフ":
                             System.out.print("得意料理:");
-                            stdIn.nextLine();
+                            String specialities=stdIn.nextLine();
+                            Cook ck=new Cook(name, job, specialities);
+                            cookList.add(ck);
                             break;
 
                         default:
                             System.out.println("error:データのない職業です");
+                            System.out.println("メニューに戻ります");
                             break;
                     }
                     break;
                 
                 case "2":
-
+                    Teacher tc=new Teacher(null, null, null);
+                    tc.print_teachers(teacherList);
+                    break;
                 case "3":
+                    Cook ck=new Cook(null, null, null);
+                    ck.print_Cook(cookList);
+                    
                     break;
             
                 default:
                     System.out.println("終了します");
-                    break;
+                    return;
             }
         }
     }

@@ -71,7 +71,7 @@ class Main11_10{
             
                 default:
                     System.out.println("終了します");
-                    break;
+                    return;
             }
         }
     }
