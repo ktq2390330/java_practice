@@ -9,7 +9,7 @@ public class Main14_4 {
         System.out.print("文字列を入力:");
         String y=sc.nextLine();
 
-        if (x==y){
+        if (x.equals(y)){
             System.out.println("同じ文字列です");
         }
         else{
