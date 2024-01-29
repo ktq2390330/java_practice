@@ -8,7 +8,7 @@ public class Main15_2 {
         try {
             int x=sc.nextInt();
             if (x%2==0) {
-            System.out.println("偶数です");
+                System.out.println("偶数です");
             } else {
                 System.out.println("奇数です");
             }
