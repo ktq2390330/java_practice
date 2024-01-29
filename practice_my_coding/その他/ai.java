@@ -79,46 +79,66 @@
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class InputValidationExample {
-    public static void main(String[] args) {
-        // Scannerオブジェクトを作成
-        Scanner scanner = new Scanner(System.in);
-        // 入力を促すメッセージを出力
-        System.out.print("入力してください: ");
-        // 入力された文字列を取得
-        String input = scanner.nextLine();
-        // 入力が数字かどうかを判定するメソッドを呼び出す
-        boolean isNumber = isNumeric(input);
-        // 判定結果に応じて処理を分岐
-        if (isNumber) {
-            // 入力が数字ならint型に変換して表示
-            int number = Integer.parseInt(input);
-            System.out.println(number);
-        } else {
-            // 入力が数字でなければエラーメッセージを出力
-            System.out.println("数字を入力してください");
-        }
-        // Scannerオブジェクトを閉じる
-        scanner.close();
-    }
+// class InputValidationExample {
+//     public static void main(String[] args) {
+//         // Scannerオブジェクトを作成
+//         Scanner scanner = new Scanner(System.in);
+//         // 入力を促すメッセージを出力
+//         System.out.print("入力してください: ");
+//         // 入力された文字列を取得
+//         String input = scanner.nextLine();
+//         // 入力が数字かどうかを判定するメソッドを呼び出す
+//         boolean isNumber = isNumeric(input);
+//         // 判定結果に応じて処理を分岐
+//         if (isNumber) {
+//             // 入力が数字ならint型に変換して表示
+//             int number = Integer.parseInt(input);
+//             System.out.println(number);
+//         } else {
+//             // 入力が数字でなければエラーメッセージを出力
+//             System.out.println("数字を入力してください");
+//         }
+//         // Scannerオブジェクトを閉じる
+//         scanner.close();
+//     }
 
-    // 入力が数字かどうかを判定するメソッド
-    public static boolean isNumeric(String input) {
-        // 入力がnullまたは空文字ならfalseを返す
-        if (input == null || input.isEmpty()) {
-            return false;
-        }
-        // 入力の各文字に対してループ
-        for (char c : input.toCharArray()) {
-            // 文字が数字でなければfalseを返す
-            if (!Character.isDigit(c)) {
-                return false;
-            }
-        }
-        // 全ての文字が数字ならtrueを返す
-        return true;
-    }
-}
+//     // 入力が数字かどうかを判定するメソッド
+//     public static boolean isNumeric(String input) {
+//         // 入力がnullまたは空文字ならfalseを返す
+//         if (input == null || input.isEmpty()) {
+//             return false;
+//         }
+//         // 入力の各文字に対してループ
+//         for (char c : input.toCharArray()) {
+//             // 文字が数字でなければfalseを返す
+//             if (!Character.isDigit(c)) {
+//                 return false;
+//             }
+//         }
+//         // 全ての文字が数字ならtrueを返す
+//         return true;
+//     }
+// }
 
+// import java.util.Scanner;
+
+// public class ReverseDigits {
+// public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in); // 入力を受け取るためのScannerオブジェクトを作成
+//     int input; // 入力された整数値を保存する変数
+//     int reverse; // 入力された整数値の桁を反転した値を保存する変数
+//     do {
+//     System.out.print("整数値を入力してください（0で終了）: "); // 入力を促すメッセージを出力
+//     input = sc.nextInt(); // 入力された整数値を変数inputに代入
+//     reverse = 0; // 変数reverseを0に初期化
+//     while (input > 0) { // 入力された整数値が0より大きい間繰り返す
+//         reverse = reverse * 10 + input % 10; // reverseに10をかけてinputの一の位を加える
+//         input = input / 10; // inputを10で割って一の位を切り捨てる
+//     }
+//     System.out.println(reverse); // reverseの値を画面に表示する
+//     } while (reverse != 0); // reverseが0でない間繰り返す
+//     sc.close(); // Scannerオブジェクトを閉じる
+// }
+// }
