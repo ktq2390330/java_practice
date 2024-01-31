@@ -1,7 +1,7 @@
 
 //インポート
-import java.util.*;
 import java.nio.charset.*;
+import java.util.*;
 //Passwordクラスの定義
 class Password{
     //要素
