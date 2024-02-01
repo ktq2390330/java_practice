@@ -1,3 +1,5 @@
+package practice.practice_my_coding.その他;
+
 // ArrayList,HashMap,Scannerのインポート
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -38,6 +40,7 @@ public static void main(String[] args) {
     System.out.println("合計点 = "+sum);
     //平均点数を表示する
     System.out.println("平均点 = "+ave);
+    stdIn.close();
     }
 
 }

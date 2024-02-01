@@ -1,3 +1,5 @@
+package practice.practice_my_coding.その他;
+
 // class Kouka1 {
 //     /**
 //      * @param args

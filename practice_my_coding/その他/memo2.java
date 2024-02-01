@@ -1,3 +1,4 @@
+package practice.practice_my_coding.その他;
 // public class memo2 {
 //     public static void main(String[] args) { 
 // //         // コンストラクタによりインスタンスを生成 
@@ -241,6 +242,7 @@ public class memo2 {
         default:
             System.out.println("そんなアプリは存在しません。");
         }
+        stdIn.close();
     }
 }
 
